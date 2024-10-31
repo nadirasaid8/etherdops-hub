@@ -1,5 +1,7 @@
 The EtherDrops Mini App is an application created by the [EtherDrops](https://t.me/fomo/app?startapp=ref_HHI7F) and DropsTab team with the support of DWF Labs.
 
+[TELEGRAM CHANNEL](https://t.me/Deeplchain) | [CONTACT](https://t.me/imspecials)
+
 How to Earn $DPS:
  - Visit: [Etherdrops](https://t.me/fomo/app?startapp=ref_HHI7F)
  - Start the bot & open Apps
