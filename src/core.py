@@ -213,13 +213,16 @@ class Ether:
 
     async def place_order(self, token, detail_coin, random_coin, period_id, _method, proxy, session):
         status = [True, False]
-        
         coins = random.choice(detail_coin) if random_coin else detail_coin[0]
         coin_id = coins.get('id')
+        
         if _method == '1':
             payload = {'coinId': coin_id, 'short': False, 'periodId': period_id}
         elif _method == '2':
             payload = {'coinId': coin_id, 'short': True, 'periodId': period_id}
         elif _method == '3':
             payload = {'coinId': coin_id, 'short': random.choice(status), 'periodId': period_id}
+        else:
+            payload = {'coinId': coin_id, 'short': random.choice(status), 'periodId': period_id}
+            
         await self.post_order(token=token, payload=payload, proxy=proxy, session=session)
